@@ -1,15 +1,21 @@
-const request = require('request');
+const fs = require('fs');
+const got = require('got');
 const cheerio = require('cheerio');
-const { log } = require('console');
+
+
+const vgmUrl = 'https://www.vgmusic.com/music/console/nintendo/nes';
 
 
 
-request('https://webscraper.io/test-sites/e-commerce/static', (e, res, html) => {
-    if (!e && res.statusCode === 200) {
-        const $ = cheerio.load(html);
-        const siteHeading = $('.navbar-brand');
-        console.log(siteHeading.html());
-    }
-});
+
+
+
+
+
+
+
+
+
+
 
 
